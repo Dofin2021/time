@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Работа Семенова А.О.</title>
+    <link rel="stylesheet" href="style.css" />
+	<script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <a class="header-logo"><img src="./image.svg" alt="" /></a>
+        <span>Базовая разметка</span>
+        <div class="header-contacts">
+          <span class="header-city">г. Сургут</span>
+          <a href="index.html" class="header-phone">+7(982)777-77-77</a>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <p>У страницы <b>всегда</b> есть элементы <b>html, head, body</b></p>
+      <p><b>Блочные элементы</b> - занимают всё пространство по ширине, поэтому всегда переносятся на новую строку</p>
+      <p><b>Инлайн элемент</b> - занимают столько места, сколько требует содержимое. Если в строке хватает места, то они размещаются на одной строке</p>
+      <p>Чаще всего используются следующие элементы:</p>
+      <div class="definitions">
+        <p><span class="code">&lt;div&gt;&lt;/div&gt;</span> - Блочный элемент</p>
+        <p><span class="code">&lt;span&gt;&lt;/span&gt;</span> - Инлайн элемент</p>
+        <p>
+          <span class="code">&lt;h1&gt;&lt;/h1&gt;</span>
+          <span class="code">&lt;h2&gt;&lt;/h2&gt;</span>
+          <span class="code">&lt;h3&gt;&lt;/h3&gt;</span>
+          <span class="code">&lt;h4&gt;&lt;/h4&gt;</span>
+          <span class="code">&lt;h5&gt;&lt;/h5&gt;</span>
+          - Заголовки блочные элементы
+        </p>
+        <p><span class="code">&lt;img src="”ссылка" на изображение”/&gt;</span> - Изображение, инлайн элементы</p>
+        <p><span class="code">&lt;label for="input-id"&gt;&lt;/label&gt;</span> - Текст подпись для элементов input. При клике на этот текст фокусируются сами инпуты.</p>
+        <p><span class="code">&lt;input type="text"/&gt;</span>- Строка ввода текста, является инлайн элемент</p>
+        <p><span class="code">&lt;input type="radio"/&gt;</span> - Радио кнопка, является инлайн элемент</p>
+        <p><span class="code">&lt;input type="checkbox"/&gt;</span> - Чекбокс, является инлайн элемент</p>
+        <p><span class="code">&lt;a href="Ссылка"&gt;&lt;/a&gt;</span>- Ссылка, инлайн элемент</p>
+        <p><span class="code">&lt;button&gt;&lt;/button&gt;</span>- Кнопка, инлайн элемент</p>
+        <p>
+          <span class="code">&lt;ul&gt;&lt;/ul&gt;</span>
+          <span class="code">&lt;ol&gt;&lt;/ol&gt;</span>
+          <span class="code">&lt;li&gt;&lt;/li&gt;</span>
+          - Список с маркерами, нумерованный список, элемент списка. Блочные элементы.
+        </p>
+        <p>
+          <span class="code">&lt;table&gt;&lt;/table&gt;</span>
+          <span class="code">&lt;thead&gt;&lt;/thead&gt;</span>
+          <span class="code">&lt;tbody&gt;&lt;/tbody&gt;</span>
+          <span class="code">&lt;tr&gt;&lt;/tr&gt;</span>
+          <span class="code">&lt;td&gt;&lt;/td&gt;</span>
+          - Таблица, заголовок таблицы, тело таблицы, строка и ячейка. Ячейки вкладываются в строки, а строки вкладываются в заголовок и тело таблицы
+        </p>
+        <p><span class="code">&lt;form&gt;&lt;/form&gt;</span> - Форма. Служит для отправки данных на сервер. Включает в себя элементы input для ввода данных и кнопку button для отправки данных на сервер</p>
+        <p><span class="code">&lt;link rel="stylesheet" href="url" &gt;></span> - Присоединение к HTML файлу других документов, обычно это файлы CSS стилей</p>
+        <p><span class="code">&lt;script src="url"&gt;код JS для выполнения&lt;/script&gt;</span> - Присоединение к HTML файлу файлов JS скриптов или выполнение JS кода</p>
+        <p><span class="code">&lt;p&gt;&lt;/p&gt;</span> - Элемент, представляющий собой абзац текста</p>
+      </div>
+	  
+      <form action="javascript:void(0);">
+        <div class="field">
+          <label for="last-name">Фамилия</label>
+          <input
+            id="last-name"
+            class="text-input"
+            type="text"
+            placeholder="Введите вашу фамилию"
+          />
+        </div>
+        <div class="field">
+          <label for="first-name">Имя</label>
+          <input
+            id="first-name"
+            class="text-input"
+            type="text"
+            placeholder="Введите ваше имя"
+          />
+        </div>
+        <div class="field-checkbox">
+          <input id="agreement" type="checkbox" />
+          <label for="agreement">
+            Согласен с условиями пользовательского соглашения
+          </label>
+        </div>
+        <button type="submit" class="form-submit" onclick="myFunction()">
+          Отправить
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
